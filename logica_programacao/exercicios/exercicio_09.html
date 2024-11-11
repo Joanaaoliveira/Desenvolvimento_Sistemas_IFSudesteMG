@@ -1,0 +1,26 @@
+<script>
+    let lado;
+
+    lado = parseInt(prompt('Quantos lados tem sua figura geométrica?'));
+
+    switch (lado) {
+        case 3:
+            document.write(`Essa figura é um triangulo`);
+            break
+
+        case 4:
+            document.write(`Essa figura é um quadrado`);
+            break
+
+        case 5:
+            document.write(`Essa figura é um pentágono`);
+            break
+
+        case 6:
+            document.write(`Essa figura é um hexágono`);
+            break
+
+        default:
+            document.write('Número de lados inválido!');
+    }
+</script>

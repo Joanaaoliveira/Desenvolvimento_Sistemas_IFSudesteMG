@@ -1,0 +1,20 @@
+<script>
+    let valor_pagar, valor_pago, valor_devido, troco;
+
+    valor_pagar = parseFloat(prompt('Digite o valor a pagar'));
+    valor_pago = parseFloat(prompt('Quanto foi pago pelo cliente?'));
+
+    if (valor_pago < valor_pagar) {
+        valor_devido = valor_pagar - valor_pago
+        document.write(`O cliente pagou ${valor_pago} reais conta de ${valor_pagar} reais, ainda falta ${valor_devido} reais.`);
+    } else  {
+        if (valor_pagar < valor_pago) {
+            troco = valor_pago - valor_pagar
+            document.write(`O cliente pagou ${valor_pago} reais conta de ${valor_pagar}, precisa receber ${troco} reais de troco.`);
+        } else {
+            document.write(`O cliente pagou o valor exato da conta - ${valor_pagar} reais. A conta está quitada!`);
+        }
+    }
+
+
+</script>

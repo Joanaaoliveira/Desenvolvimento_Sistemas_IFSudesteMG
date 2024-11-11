@@ -1,0 +1,18 @@
+<script>
+
+    let carro_01, carro_02;
+
+    carro_01 = parseFloat(prompt('Quantos km/l faz o primeiro carro?'));
+    carro_02 = parseFloat(prompt('Quantos km/l faz o segundo carro?'));
+
+    if (carro_01 > carro_02){
+        document.write(`O segundo carro é mais econômico, tendo o consumo de ${carro_02} km/L.`);
+    } else{
+        if (carro_02 > carro_01) {
+            document.write(`O primeiro carro é mais econômico, tendo o consumo de ${carro_01} km/L.`);
+        } else {
+            document.write(`O consumo dos dois carros é igual, ${carro_01} km/L`);
+        }
+    }
+    
+</script>
