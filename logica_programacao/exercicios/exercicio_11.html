@@ -1,0 +1,26 @@
+<script>
+
+    /**  Dada a distância (em km) de uma determinada cidade a três destinos diferentes, codificar 
+um programa que seja capaz de verificar qual é menor percurso. **/
+
+    let dest01, dest02, dest03;
+
+
+    dest01 = prompt('Qual é a distância do primeiro destino?');
+    dest02 = prompt('Qual é a distância do segundo destino?');
+    dest03 =prompt('Qual é a distância do terceiro destino?');
+
+
+    if(dest01 <= dest02 && dest01 <= dest03){
+        document.write(`O destino 01 tem o menor percurso, está a ${dest01}km da sua cidade.`);
+    } else {
+        if (dest02 <= dest01 && dest02 <= dest03){
+            document.write(`O destino 02 tem o menor percurso, está a ${dest02}km da sua cidade.`);
+        } else {
+            document.write(`O destino 03 tem o menor percurso, está a ${dest03}km da sua cidade.`);
+        }
+    }
+
+
+
+</script>

@@ -1,0 +1,25 @@
+<script>
+
+    /**   Codificar um programa para calcular a média das notas de um aluno. O aluno realizará 3 
+provas, porém a menor nota será descartada e não deve ser considerada para o cálculo da 
+média. **/
+
+    let nota01, nota02, nota03, result;
+
+    nota01 = parseInt(prompt('Informe a primeira nota do aluno:'));
+    nota02 = parseInt(prompt('Informe a primeira nota do aluno:'));
+    nota03 = parseInt(prompt('Informe a primeira nota do aluno:'));
+
+    if( nota01 <= nota02 && nota01 <= nota03) {
+        result = (nota02 + nota03) / 2
+        document.write(`A média do aluno é ${result}`);
+    } else if (nota02 <= nota01 && nota02 <= nota03) {
+        result = (nota01 + nota03) / 2
+        document.write(`A média do aluno é ${result}`);
+        } else {
+            result = (nota01 + nota02) / 2
+            document.write(`A média do aluno é ${result}`);
+        }
+    
+
+</script>
