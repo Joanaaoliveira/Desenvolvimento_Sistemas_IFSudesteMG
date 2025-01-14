@@ -1,4 +1,4 @@
-* Exercícios Lógica de Programação
+# Exercícios Lógica de Programação
 
 Primeiro semestre do curso de Desenvolvimento de Sistemas.
 
