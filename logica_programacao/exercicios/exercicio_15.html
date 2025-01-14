@@ -1,0 +1,26 @@
+<script>
+
+    /** Uma empresa abriu uma linha de crédito para os funcionários. O valor da prestação não
+pode ultrapassar 30% do salário. Faça um programa que receba o salário, o valor do
+empréstimo e o número de prestações e informe se o empréstimo pode ser concedido.
+Nenhum dos valores informados pode ser zero ou negativo. **/
+
+    let salario, valor_emprestimo, n_prestacoes, valor_possivel;
+
+    salario = parseFloat(prompt('Qual o valor do seu salário?'));
+    valor_emprestimo = parseFloat(prompt('Qual o valor do emprestimo?'));
+    n_prestacoes = parseInt(prompt('Qual o número de prestações?'));
+
+    valor_possivel = salario + (salario * 0,3);
+
+
+    if(salario <= 0 || valor_emprestimo <= 0 || n_prestacoes <= 0) {
+        document.write('Valor inválido!');
+    } else if (valor_emprestimo <= valor_possivel) {
+        document.write(`Empréstimo concedido no valor de R$${valor_emprestimo} a ser pago em ${n_prestacoes} prestações.`);
+    } else {
+        document.write(`Não é possível fazer este empréstimo!`);
+    }
+
+
+</script>

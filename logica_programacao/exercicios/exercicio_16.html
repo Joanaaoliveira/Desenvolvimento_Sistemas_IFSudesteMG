@@ -1,0 +1,67 @@
+<script>
+
+    /** Faça um programa que receba o dia e o mês na forma numérica e imprima o nome do
+mês e a quinzena. Por exemplo: 10 e 3 gera a saída: “Primeira quinzena de março". **/
+
+    let dia, mes;
+
+    dia = parseInt(prompt('Qual o dia?'));
+    mes = parseInt(prompt('Qual o mês?'));
+
+    function identifica_Quinzena(d) {
+        if (d <= 15) {
+            return 'Primeira Quinzena'
+        } else if (d >= 32) {
+            return 'Dia do mês inválido!'
+        } else {
+            return 'Segunda Quinzena'
+        }
+    }
+
+    if (identifica_Quinzena(dia) == 'Dia do mês inválido!') {
+        document.write('Informação inválida!')
+    } else {
+        switch (mes) {
+            case 1:
+                document.write(`${identifica_Quinzena(dia)} de janeiro`)
+                break;
+            case 2:
+                document.write(`${identifica_Quinzena(dia)} de fevereiro`)
+                break;
+            case 3:
+                document.write(`${identifica_Quinzena(dia)} de março`)
+                break;
+            case 4:
+                document.write(`${identifica_Quinzena(dia)} de abril`)
+                break;
+            case 5:
+                document.write(`${identifica_Quinzena(dia)} de maio`)
+                break;
+            case 6:
+                document.write(`${identifica_Quinzena(dia)} de junho`)
+                break;
+            case 7:
+                document.write(`${identifica_Quinzena(dia)} de julho`)
+                break;
+            case 8:
+                document.write(`${identifica_Quinzena(dia)} de agosto`)
+                break;
+            case 9:
+                document.write(`${identifica_Quinzena(dia)} de setembro`)
+                break;
+            case 10:
+                document.write(`${identifica_Quinzena(dia)} de outubro`)
+                break;
+            case 11:
+                document.write(`${identifica_Quinzena(dia)} de novembro`)
+                break;
+            case 12:
+                document.write(`${identifica_Quinzena(dia)} de dezembro`)
+                break;
+
+            default:
+                document.write('Mês inválido! Digite um número de 1 a 12.')
+                break;
+        }
+    }
+</script>

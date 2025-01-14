@@ -1,0 +1,18 @@
+<script>
+    
+    /** Codificar um programa capaz de verificar se 3 valores podem ser lados de triângulo
+escaleno. (três lados precisam ser diferentes). **/
+
+    let lado01, lado02, lado03;
+
+    lado01 = parseInt(prompt('Qual a medida do primeiro lado?'));
+    lado02 = parseInt(prompt('Qual a medida do segundo lado?'));
+    lado03 = parseInt(prompt('Qual a medida do terceiro lado?'));
+
+    if (lado01 != lado02 && lado01 != lado03 && lado02 != lado03) {
+        document.write('O triângulo é escaleno.');
+    } else {
+        document.write('Este não é um triangulo escaleno.');
+    }
+
+</script>
